@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "spartan", sans-serif;
+}
+ @font-face {
+    font-family: "spartan";
+    src: url(fonts/static/LeagueSpartan-SemiBold.ttf);
+ }
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    margin-top: 75px;
+    width: 1440px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.top{
+    display: flex;
+    height: 65%;
+}
+
+.top-left{
+    width: 80%;
+    position: relative;
+
+}
+
+#furn1, #furn2, #furn3{
+    height: 100%;
+}
+
+#furn2, #furn3{
+    display: none;
+}
+
+.nav{
+   position: absolute;
+   top: 0;
+   left: 0;
+   cursor: pointer;
+   display: flex;
+   margin-left: 50px;
+   margin-top: 50px;
+   gap: 15px;
+   flex-direction: row;
+   align-items: center;
+}
+
+.nav > img{
+    height: 20px ;
+    width: 70px;
+}
+
+
+ul{
+    color: white;
+    padding: 15px;
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+}
+
+
+
+
+
+li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px white;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+li:hover:after { transform: scaleX(1); }
+
+
+
+
+.top-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.card1, .card2, .card3{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.shop{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.shop > img{
+    width: 50px;
+    height: 20px;
+    filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(92%) contrast(93%);
+}
+
+.caption{
+    font-size: 45px;
+}
+
+.para{
+    font-size: 16px;
+    color: gray;
+}
+
+.card2, .card3{
+    display: none;
+}
+
+
+
+.button-container{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.button-container > button{
+    width: 80px;
+    height: 90px;
+    color: white;
+    background-color: rgb(12, 10, 10);
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+button > img {
+    height: 35px;
+    width: 25px;
+}
+
+
+.bottom{
+    display: flex;
+    width: 1440px;
+    height: 35%;
+}
+
+.imgleft > img{
+    height: 100%;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    padding: 44px;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.middle > p{
+    font-size: 15px;
+    color: gray;
+}
+
+.titl{
+    display: flex;
+    font-size: 12px;
+    gap: 20px;
+}
+
+.imgright > img{
+    height: 100%;
+}
+
+
